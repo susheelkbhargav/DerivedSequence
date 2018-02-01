@@ -1,0 +1,16 @@
+ static void deriveSequence(String string){
+            char compare=
+
+            for(i=0;i<len;i++){
+                int num= Character.getNumericValue(string.charAt(i));
+                int count=0;
+                for(j=i;j<len;j++){
+                    if(num==Character.getNumericValue(string.charAt(j)))
+                        count++;
+                    else
+                        break;
+                }
+
+                System.out.print(Character.getNumericValue(string.charAt(i))+Integer.toString(count));
+            }
+        }
